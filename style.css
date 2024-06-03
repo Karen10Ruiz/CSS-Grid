@@ -1,0 +1,26 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    padding: 48px;
+    background-color: blueviolet;
+}
+
+.container {
+    grid-template-columns: 100px 200px 150px; /*Define el ancho de columnas*/
+    grid-template-rows: 100px 200px 50px;
+    display: grid;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto; /*Esto centra el elemento cuando tiene ancho definido*/
+    background-color: chartreuse;
+}
+
+.item {
+    background-color: aqua;
+}
