@@ -11,13 +11,14 @@ body {
     background-color: blueviolet;
 }
 
+/*Hacer que el contrainer tenga una grilla de 5 columnas y 5 filas del mismo ancho y alto*/
 .container {
-    grid-template-columns: 100px 200px 150px; /*Define el ancho de columnas*/
-    grid-template-rows: 100px 200px 50px;
+    grid-template-columns: repeat(5,1fr); 
+    grid-template-rows: repeat(3, 1fr 2fr);
     display: grid;
     width: 500px;
     height: 500px;
-    margin: 0 auto; /*Esto centra el elemento cuando tiene ancho definido*/
+    margin: 0 auto; 
     background-color: chartreuse;
 }
 
