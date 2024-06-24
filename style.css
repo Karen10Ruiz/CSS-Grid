@@ -17,38 +17,49 @@ body {
     display: grid;
     grid-template-columns: repeat(3,1fr); 
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: ;
+    gap: 24px; 
+
+    grid-auto-flow: row; /*Es el valor por default*/
     
-    gap: 24px; /*Define el espacio de filas y columnas*/
-    row-gap: 50px; /*Espacio entre filas*/
-    column-gap: 10px; /*Espacio entre columnas*/
+
+    /*Esto no es de Grid pero funciona para cambiar la dirección*/
+    direction: rtl; /*Right To Left*/
 
     width: 500px;
     height: 500px;
     margin: 0 auto; 
-    background-color: chartreuse;
+    background-color: blue;
 
 }
 
 
-.hotcake {
+.item-1 {
     background-color: honeydew;
 }
 
-.mermelada {
+.item-2 {
     background-color: red;
 }
 
-.harina {
+.item-3 {
     background-color: chocolate;
 }
 
-.huevo {
+.item-4 {
     background-color: yellow;
 }
 
-.leche {
+.item-5 {
     background-color: hotpink;
 }
+
+.container div {
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
