@@ -15,36 +15,40 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3,100px); 
-    grid-template-rows: repeat(3, 100px);
-    grid-template-areas: 
-        "header  header  header"
-        "main    main    sidebar"
-        "footer footer footer";
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: ;
     
+    gap: 24px; /*Define el espacio de filas y columnas*/
+    row-gap: 50px; /*Espacio entre filas*/
+    column-gap: 10px; /*Espacio entre columnas*/
 
     width: 500px;
     height: 500px;
     margin: 0 auto; 
     background-color: chartreuse;
+
 }
 
-.header {
-    grid-area: header;
-    background-color: yellow;
+
+.hotcake {
+    background-color: honeydew;
 }
 
-.main {
-    grid-area: main;
+.mermelada {
     background-color: red;
 }
 
-.sidebar {
-    grid-area: sidebar;
-    background-color: blue;
+.harina {
+    background-color: chocolate;
 }
 
-.footer {
-    grid-area: footer;
-    background-color: rgb(255, 0, 195);
+.huevo {
+    background-color: yellow;
 }
+
+.leche {
+    background-color: hotpink;
+}
+}
+
